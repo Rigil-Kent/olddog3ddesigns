@@ -1,3 +1,7 @@
+.row {
+    padding: 10px;
+}
+
 nav a:link {
     color: #bf1e2d !important;
 }
@@ -14,8 +18,20 @@ footer a:hover {
     color: white !important;
 }
 
+.alt-font {
+    color: #d4d3d3;
+}
+
+.alt-font h2 {
+    color: white;
+}
+
 .bg-olddog {
     background-color: #d4d3d3;
+}
+
+.bg-olddog-alt {
+    background-color: #bf1e2d;
 }
 
 .navbar-brand img {
@@ -26,4 +42,13 @@ footer a:hover {
 
 .footer-border {
     border-top: 2px #bf1e2d solid;
+}
+
+.team-profile {
+    border: 3px solid #bf1e2d;
+}
+
+.map {
+    padding:0;
+    margin: 0 0;
 }
