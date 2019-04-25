@@ -1,4 +1,5 @@
 from app import app
+from app.forms import ContactForm
 from flask import render_template, url_for
 
 
@@ -32,7 +33,10 @@ def portfolio():
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+
+    form = ContactForm()
+
+    return render_template('contact.html', form=form)
 
 @app.route('/blog')
 def blog():

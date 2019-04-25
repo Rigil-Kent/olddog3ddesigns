@@ -1,9 +1,10 @@
 {% extends 'core/base.html' %}
 {% block content %}
-<div class="container-fluid text-center">
+<div class="container-fluid text-center red-border">
     <div class="row">
         <div class="col">
             <img src="{{ url_for('static', filename='img/olddogologo.png') }}" width="400px"><br>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
             <button type="button" class="btn btn-secondary"><span class="text-danger spinner-grow spinner-grow-sm"></span>Let's Get Started!</button>
             <br>
         </div>
@@ -13,38 +14,48 @@
 
 <div class="container-fluid bg-olddog-alt alt-font">
     <div class="row">
-        <div class="col">
+        <div  class="col-sm-12">
             <h2 class="text-center">Sample Prints</h2>
+            
+            <div class="row">
+            <div class="col-sm-3">
+                <img src="{{ url_for('static', filename='img/1d20.jpg') }}" width="300px" height="300px">
+            </div>
+            <div class="col-sm-3">
+                <img src="{{ url_for('static', filename='img/trex.jpg') }}" width="300px" height="300px">
+            </div>
+            <div class="col-sm-3">
+                <img src="{{ url_for('static', filename='img/beard.jpg') }}" width="300px" height="300px">
+            </div>
+            <div class="col-sm-3">
+                <img src="{{ url_for('static', filename='img/minecraftspin.jpg') }}" width="300px" height="300px">
+            </div>
+            </div>
 
             <div class="text-center">
-                <button type="button" class="btn btn-secondary"><a href="{{ url_for('blog') }}">Full Portfolio</a></button><br><br>
+                <button type="button" class="btn btn-olddog-gray"><a href="{{ url_for('blog') }}">Full Portfolio</a></button><br><br>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid text-center">
+<div id="d20-bg" class="container-fluid text-center team">
     <div class="row">
        <div class="col">
            <h2>Meet the Team</h2>
            <img class="rounded-circle team-profile" src="{{ url_for('static', filename='img/herk.jpg') }}" width="100px" height="100px">
            <img class="rounded-circle team-profile" src="{{ url_for('static', filename='img/jim.jpg') }}" width="100px" height="100px">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
            <button type="button" class="btn btn-danger"><a href="{{ url_for('blog') }}">More About Our Team</a></button><br><br>
        </div>
     </div>
 </div>
 
 
-<div class="container-fluid bg-olddog-alt alt-font">
-    <div class="row">
-        <div class="col">
-            <button type="button" class="btn btn-secondary"><a href="{{ url_for('blog') }}">from the blog</a></button><br><br>
-        </div>
-    </div>
-
+<div class="container-fluid bg-olddog-alt alt-font">  
     <div class="row text-center">
         <div class="col">
+        <button type="button" class="btn btn-olddog-gray"><a href="{{ url_for('blog') }}">from the blog</a></button>
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -55,7 +66,7 @@
 <div class="container-fluid map">
     <div class="row map">
         <div class="col map">
-            <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49440.03250565748!2d-76.51142782106312!3d39.242825546156986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c800c5ce1cbb09%3A0x71219558c723680!2sDundalk%2C+MD!5e0!3m2!1sen!2sus!4v1556130569184!5m2!1sen!2sus" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49440.03250565748!2d-76.51142782106312!3d39.242825546156986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c800c5ce1cbb09%3A0x71219558c723680!2sDundalk%2C+MD!5e0!3m2!1sen!2sus!4v1556130569184!5m2!1sen!2sus" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </div>

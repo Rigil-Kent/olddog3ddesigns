@@ -1,4 +1,49 @@
 {% extends 'core/base.html' %}
 {% block content %}
-<h1>Welcome!</h1>
+<h1>Contact Us</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    {{ form.name.label }}<br>
+                    {{ form.name(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.email.label }}<br>
+                    {{ form.email(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.phone.label }}<br>
+                    {{ form.phone(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.userfile.label }}<br>
+                    {{ form.userfile(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.details.label }}<br>
+                    {{ form.details(class="form-control") }}
+                </div>
+
+                <p> {{ form.submit(class="btn btn-secondary") }} </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid map">
+    <div class="row map">
+        <div class="col map">
+            <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49440.03250565748!2d-76.51142782106312!3d39.242825546156986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c800c5ce1cbb09%3A0x71219558c723680!2sDundalk%2C+MD!5e0!3m2!1sen!2sus!4v1556130569184!5m2!1sen!2sus" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 {% endblock content %}

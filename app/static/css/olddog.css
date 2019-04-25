@@ -1,5 +1,8 @@
+body {
+    font: 400 15px/1.8 'Monoserrat', sans-serif;
+}
 .row {
-    padding: 10px;
+    padding: 100px 0;
 }
 
 nav a:link {
@@ -18,6 +21,10 @@ footer a:hover {
     color: white !important;
 }
 
+footer a:visited {
+    color: white;
+}
+
 .alt-font {
     color: #d4d3d3;
 }
@@ -26,11 +33,22 @@ footer a:hover {
     color: white;
 }
 
+.alt-font a:link, .alt-font a:visited {
+    color: #bf1e2d;
+}
 .bg-olddog {
     background-color: #d4d3d3;
 }
 
 .bg-olddog-alt {
+    background-color: #bf1e2d;
+}
+
+.btn-olddog-gray {
+    background-color: #d4d3d3;
+}
+
+.btn-olddog-red {
     background-color: #bf1e2d;
 }
 
@@ -40,7 +58,7 @@ footer a:hover {
     margin:0 0;
 }
 
-.footer-border {
+.red-border {
     border-top: 2px #bf1e2d solid;
 }
 
@@ -51,4 +69,31 @@ footer a:hover {
 .map {
     padding:0;
     margin: 0 0;
+}
+
+
+#d20-bg {
+    display: block;
+    position: relative;
+}
+
+#d20-bg::after {
+    content: ' ';
+    background: url('../img/trex.jpg');
+    background-size: cover;
+    opacity: 0.4;
+    top: -250px;
+    left: -50px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#d20-bg a:link {
+    color: #d4d3d3;
+}
+
+#d20-bg a:visited {
+    color: white;
 }
